@@ -1,0 +1,90 @@
+﻿<html>
+<head>
+<title> 멤버 </title>
+</head>
+
+<body bgcolor="2ee8de">
+<br>
+<div align="center">
+<font size="6" face="양재깨비체B"> 회원가입 </font> </div>
+<p>
+<hr color="black">
+<p>
+<hr color="black">
+<p>
+<br>
+
+<div align="center">
+<table border="1" width="700" height="150">
+<form action="test.php" method="post">
+<tr><th> 아이디</th> <td>&nbsp&nbsp&nbsp<input type="text" name="id" size="20"> &nbsp <input type="button" value="중복확인" onclick>
+<font size="2"> &nbsp *&nbsp영문, 숫자 6~12자 </font> </td>
+
+<tr height="30"><th> 비밀번호</th> <td>&nbsp&nbsp&nbsp <input type="password" name="PW" size="19"> 
+&nbsp &nbsp 보안강도: <input type="range" value="30" step="3">
+<tr><th>비밀번호 확인 </th>
+<td>&nbsp&nbsp&nbsp<input type="password" name="PW" size="19">  </td>
+</table>
+<p>
+<br>
+<br>
+
+
+
+<table border="1" width="700" height="350">
+<tr><th>이름 </th>
+<td> &nbsp&nbsp&nbsp<input type="text" name="name" value="이름을 입력하세요." size="26"> </td>
+
+<tr><th>성별</th>
+<td> &nbsp&nbsp&nbsp 남: <input type="radio" name="sex" value="M">
+&nbsp 여: <input type="radio" name="sex" value="F"> </td>
+
+<tr><th>생년월일</th>
+<td>&nbsp&nbsp&nbsp <input type="date" name="birth" min="1960-01-01" max="2018-12-18"> </td>
+<tr><th>이메일 </th>
+<td> &nbsp&nbsp&nbsp 
+<input type="text" name="e-mail"> &nbsp @ &nbsp <input type="text" name="e-mail">
+<select name="e-mail">
+<option value="직접입력"> 직접 입력 </option>
+<option value="naver.com"> naver.com </option>
+<option value="hanmail.net"> hanmail.net </option>
+</select>
+</td>
+
+<tr><th> 연락처</th>
+<td> &nbsp&nbsp&nbsp<select name="phone">
+<option value="SKT"> SKT </option>
+<option value="KT"> KT </option>
+<option value="LGU+"> LGU+ </option>
+</select>
+&nbsp <input type="text" name="phone" size="4" maxlength="3">
+&nbsp - <input type="text" name="phone" size="5" maxlength="4"> 
+&nbsp - &nbsp <input type="text" name="phone" size="5" maxlength="4">
+&nbsp&nbsp <input type="button" value="휴대폰 인증" onclick> </td>
+
+<tr height="130"><th>주소 </th>
+<td> &nbsp&nbsp&nbsp <input type="text" name="post code" size="9">
+ <input type="button" name="post code" value="우편번호" onclick> <input type="text" name="address">
+<p>
+&nbsp&nbsp&nbsp
+<input type="text" name="address" size="70">
+<p>
+&nbsp&nbsp&nbsp
+<input type="text" name="address" size="70">
+</table>
+
+<p>
+<br>
+<br>
+
+<input type="submit" value="확인">
+<input type="reset" value="초기화">
+</div>
+
+</form>
+
+
+
+</body>
+
+</html>
